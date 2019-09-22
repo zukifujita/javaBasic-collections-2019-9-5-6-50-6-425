@@ -7,10 +7,12 @@ public class Sequence implements Iterable<Integer> {
     private final Integer end;
 
     public Sequence(Integer start, Integer end) {
-        if (start >= end) { throw new IllegalArgumentException("Start must be smaller than End."); }
+        if (start >= end) {
+            throw new IllegalArgumentException("Start must be smaller than End.");
+        }
         this.start = start;
         this.end = end;
-        }
+    }
 
     @Override
     public Iterator<Integer> iterator() {

@@ -38,7 +38,7 @@ public class MyStack {
         // TODO: You SHOULD NOT USE COLLECTIONS OTHER THAN ARRAY.
         // <--start
         int[] newStorageCap = new int[newCap];
-        for (int x = 0; x < storage.length; x++){
+        for (int x = 0; x < storage.length; x++) {
             newStorageCap[x] = storage[x];
         }
         this.storage = newStorageCap;
@@ -60,7 +60,7 @@ public class MyStack {
     private int pop() {
         // TODO: Please pop one element from the array.
         // <--start
-        if (count >= 0){
+        if (count >= 0) {
             return storage[--count];
         }
         // --end-->
