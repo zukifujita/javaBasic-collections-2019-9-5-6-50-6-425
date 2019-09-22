@@ -48,13 +48,13 @@ public class MyStack {
 
     public int[] popToArray() {
         final int totalItemsCount = count;
-        int[] array = new int[totalItemsCount];
+        int[] popArray = new int[totalItemsCount];
 
         while (count > 0) {
-            array[totalItemsCount - count] = pop();
+            popArray[totalItemsCount - count] = pop();
         }
 
-        return array;
+        return popArray;
     }
 
     private int pop() {
